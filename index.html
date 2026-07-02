@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PingPin Says...</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            margin: 0; 
+            background-color: #fafafa; 
+            text-align: center; 
+            padding: 24px; 
+        }
+        .box { 
+            background: #ffffff; 
+            padding: 40px 30px; 
+            border-radius: 24px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06); 
+            max-width: 360px; 
+            width: 100%;
+            border: 1px solid #eaeaea;
+            box-sizing: border-box;
+        }
+        h1 { 
+            font-size: 1.6rem; 
+            color: #1a1a1a; 
+            line-height: 1.5; 
+            margin: 0;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 id="answer">...</h1>
+    </div>
+
+    <script>
+        const answers = [
+            "NO. 🛑",
+            "YES! ✨",
+            "Okay, deserve mo yan! 🎉",
+            "Beh?! Puro ka gastos! 💸",
+            "Aray mo! 🔥",
+            "Sino ba ako para pigilan ka? 🤷‍♂️",
+            "Taray, daming pera, go! 💅",
+            "Anak ka ba ni Henry Sy?! 🏢",
+            "Lubog ka na sa utang! 💀",
+            "Kawawa ka naman, push mo na yan. 😂",
+            "May bukas pa! 🌅",
+            "GO! 🚀",
+            "Ang pera kikitain lang yan ulit, ang buhay hindi na. 🕊️",
+            "Akala ko ba need mo mag-ipon? 🤔",
+            "Di ba diet ka? 🥦",
+            "Ok, fine! 🙄",
+            "Yiiie, sige na nga. 🥰",
+            "Hmm, pag-isipan ko. Tap ka ulit! 🔄",
+            "Bawal ngani!!! ❌",
+            "Oo na, mabait ka naman today e. 😇"
+        ];
+
+        const randomAnswer = answers[Math.floor(Math.random() * answers.length)];
+        document.getElementById("answer").innerText = randomAnswer;
+    </script>
+</body>
+</html>
